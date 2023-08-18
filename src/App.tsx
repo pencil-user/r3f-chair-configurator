@@ -8,6 +8,7 @@ import { Ground } from './rtf-components/Ground'
 //import { Model } from './components/MyChair'
 import { Model } from './rtf-components/ALCB'
 import { Configurator } from './components/Configurator'
+import { Loader } from './rtf-components/Loader'
 
 function ProductConfigurator() {
   return <>
@@ -34,7 +35,9 @@ function ProductConfigurator() {
       castShadow
       shadow-bias={-0.0001}
     />
-    <Model />
+    <Suspense fallback={<Loader />}>
+      <Model />
+    </Suspense>
     {/* <mesh position-y={0.5} castShadow receiveShadow>
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={'red'} />
