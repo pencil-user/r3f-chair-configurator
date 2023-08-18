@@ -12,7 +12,7 @@ export function Loader(){
     <group position={[0,1,0]} ref={meshRef} >
       {/* <boxGeometry args={[0.5, 0.5, 0.5]} />
       <meshStandardMaterial color={'white'} /> */}
-      <Html transform>
+      <Html transform castShadow>
         <div className="custom-loader"></div>
       </Html>
     </group>
