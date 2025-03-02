@@ -16,9 +16,9 @@ import { useProductStore } from '../store'
 
 function WoodMaterial() {
   const woodTexture = useTexture({
-    normalMap: './Wood/Wood005_2K_NormalGL.jpg',
-    roughnessMap: './Wood/Wood005_2K_Roughness.png',
-    map: './Wood/Wood005_2K_Color.jpg'
+    normalMap: './WoodSmall/Wood005_2K_NormalGL.jpg',
+    roughnessMap: './WoodSmall/Wood005_2K_Roughness.png',
+    map: './WoodSmall/Wood005_2K_Color.jpg'
   })
   return <meshStandardMaterial {...woodTexture} />
 }
@@ -40,8 +40,8 @@ function LeatherMaterial({ color }: { color: string }) {
 
 function FabricMaterial({ color }: { color: string }) {
   const fabricTexture = useTexture({
-    normalMap: './FabricPlain/FabricPlainGreyFlat015_NRM_1K.png',
-    map: './FabricPlain/FabricPlainGreyFlat015_COL_1K.jpg',
+    normalMap: './FabricPlainSmall/FabricPlainGreyFlat015_NRM_1K.png',
+    map: './FabricPlainSmall/FabricPlainGreyFlat015_COL_1K.jpg',
   })
 
   return <meshStandardMaterial
